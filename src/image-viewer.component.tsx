@@ -178,8 +178,8 @@ export default class ImageViewer extends React.Component<Props, State> {
     }
 
 
-      if(this!.props!.imageSizeFetcher) {
-          this!.props!.imageSizeFetcher(image.url).then((size) => {
+      if(this.props.imageSizeFetcher) {
+          this.props.imageSizeFetcher(image.url).then((size: any) => {
               imageStatus.width = size.width;
               imageStatus.height = size.height;
               imageStatus.status = "success";

@@ -187,6 +187,8 @@ export class Props {
   public onChange?: (index?: number) => void = () => {
     //
   }
+
+    public imageSizeFetcher?: (uri?: string) => any
 }
 
 export class State {
